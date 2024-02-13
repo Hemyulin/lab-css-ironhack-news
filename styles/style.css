@@ -86,6 +86,10 @@ header {
   border-bottom: 1px solid white;
 }
 
+#burger {
+  display: none;
+}
+
 .navbar {
   list-style-type: none;
   width: 100%;
@@ -254,7 +258,19 @@ header {
   }
 }
 
-@media (max-size: 480px) {
+@media (max-width: 480px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
   .navbar {
+    display: none;
+  }
+
+  #burger {
+    display: block;
   }
 }
